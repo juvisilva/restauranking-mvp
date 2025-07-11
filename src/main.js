@@ -63,4 +63,6 @@ window.onload = () => {
     option.textContent = name;
     categorySelect.appendChild(option);
   });
+
+  document.getElementById("searchBtn").addEventListener("click", searchPlaces);
 };
