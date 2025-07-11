@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const keyword = categories[category];
     const radius = 2500;
 
-    const endpoint = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${coords.lat},${coords.lng}&radius=${radius}&keyword=${keyword}&key=${GOOGLE_PLACES_API_KEY}`;
+const endpoint = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${coords.lat},${coords.lng}&radius=${radius}&keyword=${keyword}&key=${window.GOOGLE_PLACES_API_KEY}`;
     const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 
     try {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           const photoRef = place.photos?.[0]?.photo_reference;
           const photoUrl = photoRef
-            ? `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photoRef}&key=${GOOGLE_PLACES_API_KEY}`
+            ? `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photoRef}&key=${window.GOOGLE_PLACES_API_KEY}`
             : "https://via.placeholder.com/400x200?text=Sin+foto";
 
           card.innerHTML = `
