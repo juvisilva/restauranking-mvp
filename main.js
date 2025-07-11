@@ -64,3 +64,4 @@ window.onload = () => {
     categorySelect.appendChild(option);
   });
 };
+document.getElementById("searchBtn").addEventListener("click", searchPlaces);
