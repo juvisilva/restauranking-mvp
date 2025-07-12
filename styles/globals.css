@@ -1,0 +1,23 @@
+
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  font-size: 2em;
+}
+.filters {
+  margin-bottom: 20px;
+}
+.results {
+  display: grid;
+  gap: 1em;
+}
+.card {
+  background: white;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
